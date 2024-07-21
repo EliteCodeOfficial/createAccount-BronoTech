@@ -30,13 +30,20 @@ form {
     flex-direction:column;
     Padding-top: 30px;
 }
-#Name, #Email, #Mob , #Password{
+#Name, #Email, #Mob , #Password1, #Password2{
     height: 40px;
     width: 350px; 
      outline: none;
     padding-right: 5px;
     margin-bottom: 30px;
 
+}
+#Password1, #Password2 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+#Password-r, #status {
+    height: 30px;
 }
 #Name {
  text-transform: capitalize;
@@ -79,27 +86,27 @@ p {
     text-decoration: none;
 }
 @media (max-width: 445px) {
-    #Name, #Email, #Mob , #Password{
+    #Name, #Email, #Mob , #Password1, #Password2{
      width: 300px;
     }
 }
 @media (max-width: 400px) {
-    #Name, #Email, #Mob , #Password{
+    #Name, #Email, #Mob , #Password1, #Password2{
         width: 260px;
        }
 }
 @media (max-width: 350px) {
-    #Name, #Email, #Mob , #Password{
+    #Name, #Email, #Mob , #Password1, #Password2{
         width: 240px;
        }
 }
 @media (max-width: 320px) {
-    #Name, #Email, #Mob , #Password{
+    #Name, #Email, #Mob , #Password1, #Password2{
         width: 200px;
        }
 }
 @media (max-width: 280px) {
-    #Name, #Email, #Mob , #Password{
+    #Name, #Email, #Mob , #Password1, #Password2{
         width: 170px;
        }
        main {
@@ -110,8 +117,9 @@ p {
        }
        
     }
+    
     @media (max-width: 260px) {
-        #Name, #Email, #Mob , #Password{
+        #Name, #Email, #Mob , #Password1, #Password2{
             width: 140px;
            }
            main {
@@ -136,7 +144,7 @@ p {
            
     }
     @media (max-width: 200px) {
-        #Name, #Email, #Mob , #Password{
+        #Name, #Email, #Mob , #Password1, #Password2{
             width: 100px;
            }
            main {
@@ -161,7 +169,7 @@ p {
             font-size: 11px;
         }}
         @media (max-width: 200px) {
-            #Name, #Email, #Mob , #Password{
+            #Name, #Email, #Mob , #Password1, #Password2{
                 width: 100px;
                }
                main {
@@ -189,4 +197,15 @@ p {
                 font-size: 12px;        
             }
         
+        }
+
+        #password-see {
+            color: rgb(24, 57, 65);
+            font-size: 14px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: right;
+            width: 100%;
+            cursor: pointer;
         }
